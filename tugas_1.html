@@ -1,84 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Website Sederhana dengan Table</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Hanif</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Section 1: Menu -->
-    <center><h2>Hanif Soeryo</h2></center>
-    <table border="1" width="100%">
-        <tr align="center">
-            <td>Home</td>
-            <td>About</td>
-            <td>Biodata</td>
-            <td>Portfolio</td>
-            <td>Contact</td>
-        </tr>
-    </table>
-    <br>
+  <!-- Header + Menu -->
+  <header>
+    <h1>Hanif Soeryo</h1>
+    <p>Mahasiswa Teknik Informatika</p>
+  </header>
 
-    <!-- Section 2: Judul di kiri, gambar di kanan -->
-    <h2>Welcome</h2>
-    <table border="1" width="100%">
-        <tr>
-            <td width="70%">
-                <h3>Seorang Mahasiswa Teknik Informatika</h3>
-                <p>Sedang belajar membuat sebuah website dari awal</p>
-                <button>Coba Klik</button>
-            </td>
-            <td width="30%" align="center">
-                <img src="D:\localsend\Hanif - 3.JPG" alt="Gambar" width="300">
-            </td>
-        </tr>
-    </table>
-    <br>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Biodata</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Contact</a>
+  </nav>
 
-    <!-- Section 3: Biodata dengan 6 box -->
-    <center><h2>About Me</h2></center>
-    <p align="center">Data Singkat Tentang Saya</p>
-    <table border="1" width="100%">
-        <tr align="center">
-            <td>Nama</td>
-            <td>Hanif Wicaksono</td>
-        </tr>
-        <tr align="center">
-            <td>Umur</td>
-            <td>19 Tahun</td>
-        </tr>
-        <tr align="center">
-            <td>Jurusan</td>
-            <td>Teknik Informatika</td>
-        </tr>
-        <tr align="center">
-            <td>Kampus</td>
-            <td>Politeknik Negeri Batam</td>
-        </tr>
-        <tr align="center">
-            <td>Hobi</td>
-            <td>Gaming & Editing</td>
-        </tr>
-        <tr align="center">
-            <td>Cita-cita</td>
-            <td>Software Engineer</td>
-        </tr>
-    </table>
-    <br>
+  <!-- Section 2: Welcome -->
+  <section class="welcome">
+    <div>
+      <h2>Welcome</h2>
+      <h3>Seorang Mahasiswa Teknik Informatika</h3>
+      <p>Sedang belajar membuat sebuah website dari awal</p>
+    <button onclick="alert('Halo, Belum ada apa-apa hehe')" class="btn-coba">Coba Klik</button>
 
-    <!-- Section 4: Portofolio -->
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?q=80&w=1168&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mahasiswa IT">
+    </div>
+  </section>
+
+  <!-- Section 3: Biodata -->
+  <section class="biodata">
+    <h2>About Me</h2>
+<p>Data Singkat Tentang Saya</p>
+<div class="biodata-grid">
+  <div class="bio-card"><span class="label">Nama:</span> <span class="value">Hanif Wicaksono</span></div>
+  <div class="bio-card"><span class="label">Umur:</span> <span class="value">19 Tahun</span></div>
+  <div class="bio-card"><span class="label">Jurusan:</span> <span class="value">Teknik Informatika</span></div>
+  <div class="bio-card"><span class="label">Kampus:</span> <span class="value">Politeknik Negeri Batam</span></div>
+  <div class="bio-card"><span class="label">Hobi:</span> <span class="value">Gaming & Editing</span></div>
+  <div class="bio-card"><span class="label">Cita-cita:</span> <span class="value">Software Engineer</span></div>
+</div>
+
+  </section>
+
+  <!-- Section 4: Portfolio -->
+  <section class="portfolio">
     <h2>Portofolio</h2>
-    <table border="1" width="100%">
-        <tr align="center">
-            <td><img src="https://via.placeholder.com/150" alt="Project 1"><br>Project 1</td>
-            <td><img src="https://via.placeholder.com/150" alt="Project 2"><br>Project 2</td>
-            <td><img src="https://via.placeholder.com/150" alt="Project 3"><br>Project 3</td>
-        </tr>
-        <tr align="center">
-            <td><img src="https://via.placeholder.com/150" alt="Project 4"><br>Project 4</td>
-            <td><img src="https://via.placeholder.com/150" alt="Project 5"><br>Project 5</td>
-            <td><img src="https://via.placeholder.com/150" alt="Project 6"><br>Project 6</td>
-        </tr>
-    </table>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 1">
+        <p>Project 1</p>
+        <p>Membuat website perumahan</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 2">
+        <p>Project 2</p>
+        <p>Membuat website kampus</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 3">
+        <p>Project 3</p>
+        <p>Membuat website pribadi</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Hanif Wicaksono. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
