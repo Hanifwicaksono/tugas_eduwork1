@@ -8,7 +8,7 @@ body {
 
 /* Header */
 header {
-  background: #4a90e2;
+  background: #37353E;
   color: white;
   text-align: center;
   padding: 20px;
@@ -34,25 +34,27 @@ nav a:hover {
 /* Welcome Section */
 .welcome {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 0fr; /* jangan 0fr, nanti kolom kanan ilang */
   align-items: center;
   gap: 20px;
   padding: 40px;
   background: #ffffff;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  margin: 20px;
+  margin: 20px auto;   /* <--- ini bikin card rata tengah */
   border-radius: 10px;
+  max-width: 900px;    /* <--- biar ada lebar max, jadi gak terlalu melebar */
 }
 .welcome img {
   max-width: 100%;
   border-radius: 10px;
 }
+
 .label {
   font-weight: bold;
   color: #ffd700; /* warna emas untuk label */
 }
 .btn-coba {
-  background-color: #2a67c2;   /* warna hijau */
+  background-color: #44444E;   /* warna hijau */
   color: white;                /* warna teks */
   padding: 12px 24px;          /* ukuran tombol */
   border: none;                /* tanpa border */
@@ -85,7 +87,7 @@ nav a:hover {
   margin-top: 20px;
 }
 .bio-card {
-  background: #4a90e2;
+  background: #715A5A;
   color: white;
   padding: 20px;
   border-radius: 10px;
@@ -120,7 +122,7 @@ nav a:hover {
 
 /* Footer */
 footer {
-  background: #333;
+  background: #37353E;
   color: white;
   text-align: center;
   padding: 15px;

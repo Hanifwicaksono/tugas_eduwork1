@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Website Hanif</title>
+
+  <!-- Bootstrap Offline CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- CSS kamu -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,33 +27,83 @@
     <a href="#">Contact</a>
   </nav>
 
-  <!-- Section 2: Welcome -->
-  <section class="welcome">
-    <div>
+ <!-- Section 2: Welcome -->
+<section class="welcome container my-5">
+  <div class="row align-items-center">
+
+    <!-- Kolom teks -->
+    <div class="col-md-6">
       <h2>Welcome</h2>
       <h3>Seorang Mahasiswa Teknik Informatika</h3>
       <p>Sedang belajar membuat sebuah website dari awal</p>
-    <button onclick="alert('Halo, Belum ada apa-apa hehe')" class="btn-coba">Coba Klik</button>
 
+      <!-- Tombol untuk membuka modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#carouselModal">
+        Lihat Carousel
+      </button>
     </div>
-    <div>
-      <img src="https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?q=80&w=1168&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mahasiswa IT">
+
+    <!-- Kolom gambar -->
+    <div class="col-md-6 text-center">
+      <img src="https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?q=80&w=1168&auto=format&fit=crop&ixlib=rb-4.1.0" 
+           alt="Mahasiswa IT" class="img-fluid rounded">
     </div>
+  </div>
+</section>
+
+<!-- Modal dengan Carousel -->
+<div class="modal fade" id="carouselModal" tabindex="-1" aria-labelledby="carouselModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carouselModalLabel">Carousel</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Carousel -->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://images.unsplash.com/photo-1755398104195-294a494782e8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0" class="d-block w-100" alt="Gambar 1">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.unsplash.com/photo-1756712172056-bf2ad1aa68fd?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0" class="d-block w-100" alt="Gambar 2">
+            </div>
+            <div class="carousel-item">
+              <img src="https://plus.unsplash.com/premium_photo-1751520788468-d3b7b4b94a8e?q=80&w=748&auto=format&fit=crop&ixlib=rb-4.1.0" class="d-block w-100" alt="Gambar 3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- End Carousel -->
+
+      </div>
+    </div>
+  </div>
+</div>
+
   </section>
 
   <!-- Section 3: Biodata -->
   <section class="biodata">
     <h2>About Me</h2>
-<p>Data Singkat Tentang Saya</p>
-<div class="biodata-grid">
-  <div class="bio-card"><span class="label">Nama:</span> <span class="value">Hanif Wicaksono</span></div>
-  <div class="bio-card"><span class="label">Umur:</span> <span class="value">19 Tahun</span></div>
-  <div class="bio-card"><span class="label">Jurusan:</span> <span class="value">Teknik Informatika</span></div>
-  <div class="bio-card"><span class="label">Kampus:</span> <span class="value">Politeknik Negeri Batam</span></div>
-  <div class="bio-card"><span class="label">Hobi:</span> <span class="value">Gaming & Editing</span></div>
-  <div class="bio-card"><span class="label">Cita-cita:</span> <span class="value">Software Engineer</span></div>
-</div>
-
+    <p>Data Singkat Tentang Saya</p>
+    <div class="biodata-grid">
+      <div class="bio-card"><span class="label">Nama:</span> <span class="value">Hanif Wicaksono</span></div>
+      <div class="bio-card"><span class="label">Umur:</span> <span class="value">19 Tahun</span></div>
+      <div class="bio-card"><span class="label">Jurusan:</span> <span class="value">Teknik Informatika</span></div>
+      <div class="bio-card"><span class="label">Kampus:</span> <span class="value">Politeknik Negeri Batam</span></div>
+      <div class="bio-card"><span class="label">Hobi:</span> <span class="value">Gaming & Editing</span></div>
+      <div class="bio-card"><span class="label">Cita-cita:</span> <span class="value">Software Engineer</span></div>
+    </div>
   </section>
 
   <!-- Section 4: Portfolio -->
@@ -69,6 +124,8 @@
         <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 3">
         <p>Project 3</p>
         <p>Membuat website pribadi</p>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
@@ -76,5 +133,7 @@
     <p>&copy; 2025 Hanif Wicaksono. All rights reserved.</p>
   </footer>
 
+  <!-- Bootstrap Offline JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
